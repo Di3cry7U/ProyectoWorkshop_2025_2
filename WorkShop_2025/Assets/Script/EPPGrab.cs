@@ -36,7 +36,7 @@ public class EPPGrab : MonoBehaviour
 
     public void FindBodySlot()
     {
-        string slotName = "Slot_" + eppType.ToString();
+        string slotName = eppType.ToString();
         GameObject slotObj = GameObject.Find(slotName);
 
         if (slotObj != null)
