@@ -20,7 +20,7 @@ public class Mezclas : MonoBehaviour
     bool estaVertiendo = false; // True si la Corrutina de vertido está activa
     bool estaMezclando = false; // True si la mezcla ha ocurrido o está ocurriendo
     Renderer matrazRenderer;
-    public Renderer liquidoRenderer;//para el liquido interno
+    public Renderer liquidoInternoRenderer;//para el liquido interno
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,10 +35,10 @@ public class Mezclas : MonoBehaviour
         Transform liquidoChild = transform.Find("Liquido");
         if(liquidoChild != null)
         {
-            liquidoRenderer = liquidoChild.GetComponent<Renderer>();
-            if(liquidoRenderer != null)
+            liquidoInternoRenderer = liquidoChild.GetComponent<Renderer>();
+            if(liquidoInternoRenderer != null)
             {
-                liquidoRenderer.material.color = colorMezclaInicial;
+                liquidoInternoRenderer.material.color = colorMezclaInicial;
             }
         }
         else
@@ -102,10 +102,14 @@ public class Mezclas : MonoBehaviour
             LiquidoPelota pelota = collision.gameObject.GetComponent<LiquidoPelota>();
             if(pelota != null)
             {
-                Color nuevoColor = pelota.colorActual;
-                if(liquidoRenderer != null)
+                //Color nuevoColor = pelota.colorActual;
+                //if(liquidoInternoRenderer != null)
+                //{
+                //    liquidoInternoRenderer.material.color = nuevoColor;
+                //}
+                if(pelota.colorActual == colorMezclaFinal)
                 {
-                    liquidoRenderer.material.color = nuevoColor;
+                    CambioColorInterno(colorMezclaFinal);
                 }
             }
         }
@@ -126,7 +130,7 @@ public class Mezclas : MonoBehaviour
             LiquidoPelota liquidoPelota = liquidoInstance.GetComponent<LiquidoPelota>();
             if(liquidoPelota != null)
             {
-                Color colorBase = liquidoRenderer != null ? liquidoRenderer.material.color : colorMezclaInicial;
+                Color colorBase = liquidoInternoRenderer != null ? liquidoInternoRenderer.material.color : colorMezclaInicial;
                 liquidoPelota.colorActual = colorBase;
                 liquidoPelota.SetColor(colorBase);
             }
@@ -187,6 +191,20 @@ public class Mezclas : MonoBehaviour
             }
 
             otroMatraz.estaMezclando = true;
+        }
+    }
+    public void CambioColorInterno(Color nuevoColor)
+    {
+        if(liquidoInternoRenderer != null)
+        {
+            //cambia el color del material intetrno del matraz
+            liquidoInternoRenderer.material.color = nuevoColor;
+            colorMezclaFinal = nuevoColor;
+            Debug.Log(gameObject.name + ": Liquido interno cambiado" + nuevoColor);
+        }
+        else
+        {
+            Debug.LogWarning(gameObject.name + ": No se encontro renderer de liquido interno para cambiar color");
         }
     }
 }

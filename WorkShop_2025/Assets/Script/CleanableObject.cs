@@ -12,6 +12,20 @@ public class CleanableObject : MonoBehaviour
     Material materialInstance;
     //Color baseColor;
 
+    //colision que se encarga de tomar el renderer del liquido cuando choca
+    //dando la sensecion que se mancho con ese color
+    private void OnCollisionEnter(Collision collision)
+    {
+        charcoRenderer = collision.gameObject.GetComponent<Renderer>();
+        if (collision.collider.gameObject.CompareTag("Liquido"))
+        {
+            if (charcoRenderer != null)
+            {
+                Renderer pelota = GetComponent<Renderer>();
+                pelota.material = charcoRenderer.material;
+            }
+        }
+    }
     private void Start()
     {
         if(charcoRenderer == null)
