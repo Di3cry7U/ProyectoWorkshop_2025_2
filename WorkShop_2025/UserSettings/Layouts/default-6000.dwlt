@@ -19,9 +19,15 @@ MonoBehaviour:
     width: 1920
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 997
   m_ShowMode: 4
   m_Title: Game
+=======
+    height: 1037
+  m_ShowMode: 4
+  m_Title: Scene
+>>>>>>> parent of d705516 (Mezclas)
 =======
     height: 1037
   m_ShowMode: 4
@@ -59,7 +65,11 @@ MonoBehaviour:
     width: 1920
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 997
+=======
+    height: 1037
+>>>>>>> parent of d705516 (Mezclas)
 =======
     height: 1037
 >>>>>>> parent of d705516 (Mezclas)
@@ -112,7 +122,11 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 977
+=======
+    y: 1017
+>>>>>>> parent of d705516 (Mezclas)
 =======
     y: 1017
 >>>>>>> parent of d705516 (Mezclas)
@@ -145,11 +159,19 @@ MonoBehaviour:
     width: 1920
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 941
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
   controlID: 108
+=======
+    height: 981
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 91
+>>>>>>> parent of d705516 (Mezclas)
 =======
     height: 981
   m_MinSize: {x: 300, y: 100}
@@ -187,11 +209,19 @@ MonoBehaviour:
     width: 1216
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 941
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
   controlID: 53
+=======
+    height: 981
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 43
+>>>>>>> parent of d705516 (Mezclas)
 =======
     height: 981
   m_MinSize: {x: 200, y: 100}
@@ -229,11 +259,19 @@ MonoBehaviour:
     width: 1216
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 554
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 54
+=======
+    height: 577
+  m_MinSize: {x: 200, y: 50}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 44
+>>>>>>> parent of d705516 (Mezclas)
 =======
     height: 577
   m_MinSize: {x: 200, y: 50}
@@ -268,8 +306,13 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 235
     height: 554
+=======
+    width: 245
+    height: 577
+>>>>>>> parent of d705516 (Mezclas)
 =======
     width: 245
     height: 577
@@ -302,10 +345,17 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 235
     y: 0
     width: 981
     height: 554
+=======
+    x: 245
+    y: 0
+    width: 971
+    height: 577
+>>>>>>> parent of d705516 (Mezclas)
 =======
     x: 245
     y: 0
@@ -343,9 +393,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 554
     width: 1216
     height: 387
+=======
+    y: 577
+    width: 1216
+    height: 404
+>>>>>>> parent of d705516 (Mezclas)
 =======
     y: 577
     width: 1216
@@ -386,11 +442,19 @@ MonoBehaviour:
     width: 704
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 941
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
   controlID: 109
+=======
+    height: 981
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 92
+>>>>>>> parent of d705516 (Mezclas)
 =======
     height: 981
   m_MinSize: {x: 100, y: 100}
@@ -426,7 +490,11 @@ MonoBehaviour:
     width: 704
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 468
+=======
+    height: 324
+>>>>>>> parent of d705516 (Mezclas)
 =======
     height: 324
 >>>>>>> parent of d705516 (Mezclas)
@@ -458,9 +526,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 468
     width: 704
     height: 473
+=======
+    y: 324
+    width: 704
+    height: 657
+>>>>>>> parent of d705516 (Mezclas)
 =======
     y: 324
     width: 704
@@ -504,7 +578,11 @@ MonoBehaviour:
     width: 703
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 442
+=======
+    height: 298
+>>>>>>> parent of d705516 (Mezclas)
 =======
     height: 298
 >>>>>>> parent of d705516 (Mezclas)
@@ -567,9 +645,15 @@ MonoBehaviour:
       width: 703
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       height: 421
     m_Scale: {x: 0.36614582, y: 0.36614585}
     m_Translation: {x: 351.5, y: 210.5}
+=======
+      height: 277
+    m_Scale: {x: 0.25648147, y: 0.25648147}
+    m_Translation: {x: 351.5, y: 138.5}
+>>>>>>> parent of d705516 (Mezclas)
 =======
       height: 277
     m_Scale: {x: 0.25648147, y: 0.25648147}
@@ -588,6 +672,7 @@ MonoBehaviour:
       serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       x: -960.00006
       y: -574.90753
       width: 1920.0001
@@ -595,6 +680,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.36614582
   m_LastWindowPixelSize: {x: 703, y: 442}
+=======
+      x: -1370.4694
+      y: -540
+      width: 2740.9387
+      height: 1080
+    m_MinimalGUI: 1
+  m_defaultScale: 0.25648147
+  m_LastWindowPixelSize: {x: 703, y: 298}
+>>>>>>> parent of d705516 (Mezclas)
 =======
       x: -1370.4694
       y: -540
@@ -644,8 +738,13 @@ MonoBehaviour:
     y: 79
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 234
     height: 528
+=======
+    width: 244
+    height: 551
+>>>>>>> parent of d705516 (Mezclas)
 =======
     width: 244
     height: 551
@@ -670,9 +769,15 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 1a9cffff
       m_LastClickedID: -25574
       m_ExpandedIDs: c221ffff1a9cffff82a6ffff08c4ffff5cd6ffff18d7ffff3ad7ffff54d7ffff42e6ffffece8ffffbcfaffffcab20000d2b20000f8b2000004b3000070b3000080b30000ccb30000d6b30000e6b3000010b4000016b400006ef6000084f60000
+=======
+      m_SelectedIDs: 72070100
+      m_LastClickedID: 0
+      m_ExpandedIDs: 74c0ffff
+>>>>>>> parent of d705516 (Mezclas)
 =======
       m_SelectedIDs: 72070100
       m_LastClickedID: 0
@@ -730,6 +835,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 235
     y: 79
     width: 979
@@ -737,11 +843,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of d705516 (Mezclas)
+=======
+>>>>>>> parent of d705516 (Mezclas)
     x: 245
     y: 79
     width: 969
     height: 551
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d705516 (Mezclas)
+=======
 >>>>>>> parent of d705516 (Mezclas)
 =======
 >>>>>>> parent of d705516 (Mezclas)
@@ -1329,9 +1440,15 @@ MonoBehaviour:
   m_Position:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 1.0596249, y: 1.2195873, z: 3.5367403}
     speed: 2
     m_Value: {x: 1.0596249, y: 1.2195873, z: 3.5367403}
+=======
+    m_Target: {x: -24.270378, y: -6.396879, z: -2.4536347}
+    speed: 2
+    m_Value: {x: -24.270378, y: -6.396879, z: -2.4536326}
+>>>>>>> parent of d705516 (Mezclas)
 =======
     m_Target: {x: -24.270378, y: -6.396879, z: -2.4536347}
     speed: 2
@@ -1389,6 +1506,7 @@ MonoBehaviour:
   m_Rotation:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.16291344, y: 0.04497081, z: -0.007431116, w: -0.9856149}
     speed: 2
     m_Value: {x: -0.16290896, y: 0.044969574, z: -0.0074309115, w: -0.9855878}
@@ -1396,6 +1514,15 @@ MonoBehaviour:
     m_Target: 1.1299369
     speed: 2
     m_Value: 1.1299369
+=======
+    m_Target: {x: -0.22926973, y: 0.69633675, z: -0.25284043, w: -0.63137364}
+    speed: 2
+    m_Value: {x: -0.228509, y: 0.6982241, z: -0.2535258, w: -0.62927854}
+  m_Size:
+    m_Target: 10
+    speed: 2
+    m_Value: 10
+>>>>>>> parent of d705516 (Mezclas)
 =======
     m_Target: {x: -0.22926973, y: 0.69633675, z: -0.25284043, w: -0.63137364}
     speed: 2
@@ -1471,9 +1598,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 633
     width: 1215
     height: 361
+=======
+    y: 656
+    width: 1215
+    height: 378
+>>>>>>> parent of d705516 (Mezclas)
 =======
     y: 656
     width: 1215
@@ -1520,6 +1653,7 @@ MonoBehaviour:
   m_LastFoldersGridSize: -1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastProjectPath: C:\GitHub_Project\ProyectoWorkshop_2025_2\WorkShop_2025
   m_LockTracker:
     m_IsLocked: 0
@@ -1539,11 +1673,20 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
 >>>>>>> parent of d705516 (Mezclas)
+=======
+  m_LastProjectPath: D:\GitHub\LVL DESIGN\ProyectoWorkshop_2025_2\WorkShop_2025
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+>>>>>>> parent of d705516 (Mezclas)
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e0060100
     m_LastClickedID: 67296
     m_ExpandedIDs: 00000000d6060100
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d705516 (Mezclas)
+=======
 >>>>>>> parent of d705516 (Mezclas)
 =======
 >>>>>>> parent of d705516 (Mezclas)
@@ -1693,9 +1836,15 @@ MonoBehaviour:
     x: 1216
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 547
     width: 703
     height: 447
+=======
+    y: 403
+    width: 703
+    height: 631
+>>>>>>> parent of d705516 (Mezclas)
 =======
     y: 403
     width: 703

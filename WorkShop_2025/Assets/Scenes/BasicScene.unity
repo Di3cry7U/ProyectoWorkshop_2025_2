@@ -121,6 +121,7 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &151467839
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +153,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221556135}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+=======
+>>>>>>> parent of d705516 (Mezclas)
 =======
 >>>>>>> parent of d705516 (Mezclas)
 =======
@@ -735,6 +738,9 @@ Transform:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d705516 (Mezclas)
+=======
 >>>>>>> parent of d705516 (Mezclas)
 =======
 >>>>>>> parent of d705516 (Mezclas)
@@ -926,6 +932,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &851143949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1014,6 +1021,8 @@ PrefabInstance:
       addedObject: {fileID: 221556138}
   m_SourcePrefab: {fileID: 100100000, guid: 79155767bdf4e994daec7f2f4a783415, type: 3}
 =======
+=======
+>>>>>>> parent of d705516 (Mezclas)
 =======
 >>>>>>> parent of d705516 (Mezclas)
 --- !u!1 &1092964168
@@ -1363,6 +1372,7 @@ MonoBehaviour:
       m_Calls: []
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1355266380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,6 +1404,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 221556135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of d705516 (Mezclas)
 =======
 >>>>>>> parent of d705516 (Mezclas)
 =======
@@ -1922,11 +1934,14 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &2078832278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 79155767bdf4e994daec7f2f4a783415, type: 3}
   m_PrefabInstance: {fileID: 1560670980}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of d705516 (Mezclas)
 =======
 >>>>>>> parent of d705516 (Mezclas)
 =======
@@ -2139,6 +2154,9 @@ SceneRoots:
 =======
   - {fileID: 1092964173}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d705516 (Mezclas)
+=======
 >>>>>>> parent of d705516 (Mezclas)
 =======
 >>>>>>> parent of d705516 (Mezclas)
