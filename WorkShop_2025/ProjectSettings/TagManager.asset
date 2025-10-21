@@ -5,7 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Anchor
+<<<<<<< HEAD
   - Matraz
+=======
+>>>>>>> parent of d705516 (Mezclas)
   layers:
   - Default
   - TransparentFX
