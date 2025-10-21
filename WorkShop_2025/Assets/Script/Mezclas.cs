@@ -19,7 +19,8 @@ public class Mezclas : MonoBehaviour
 
     bool estaVertiendo = false; // True si la Corrutina de vertido está activa
     bool estaMezclando = false; // True si la mezcla ha ocurrido o está ocurriendo
-    Renderer matrazRenderer; 
+    Renderer matrazRenderer;
+    public Renderer liquidoRenderer;//para el liquido interno
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,17 +32,31 @@ public class Mezclas : MonoBehaviour
             Debug.LogError("Rigidbody no encontrado, el matraz necesita un Rigidbody");
         }
 
-        // Obtiene el Renderer para poder cambiar el color del material
-        matrazRenderer = GetComponent<Renderer>();
-        if (matrazRenderer != null)
+        Transform liquidoChild = transform.Find("Liquido");
+        if(liquidoChild != null)
         {
-            //establecer el color inicial del material del matraz
-            matrazRenderer.material.color = colorMezclaInicial;
+            liquidoRenderer = liquidoChild.GetComponent<Renderer>();
+            if(liquidoRenderer != null)
+            {
+                liquidoRenderer.material.color = colorMezclaInicial;
+            }
         }
         else
         {
-            Debug.LogError("Renderer no encontrado en el matraz");
+            Debug.LogWarning("No se encontró un hijo llamado 'Liquido' dentro del matraz");
         }
+
+        // Obtiene el Renderer para poder cambiar el color del material
+        //matrazRenderer = GetComponent<Renderer>();
+        //if (matrazRenderer != null)
+        //{
+        //    //establecer el color inicial del material del matraz
+        //    matrazRenderer.material.color = colorMezclaInicial;
+        //}
+        //else
+        //{
+        //    Debug.LogError("Renderer no encontrado en el matraz");
+        //}
 
         // Comprobación de seguridad: verifica si el punto de salida ha sido asignado
         if (spawnPointLiquido == null)
@@ -71,16 +86,28 @@ public class Mezclas : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        // Comprueba 3 condiciones para iniciar la mezcla:
-        // 1. El objeto de colisión tiene el Tag "Matraz".
-        // 2. ESTE matraz estaba activamente vertiendo líquido.
-        // 3. La mezcla aún no ha ocurrido.
-        if (collision.gameObject.CompareTag("Matraz") && estaVertiendo && !estaMezclando)
+        //// Comprueba 3 condiciones para iniciar la mezcla:
+        //// 1. El objeto de colisión tiene el Tag "Matraz".
+        //// 2. ESTE matraz estaba activamente vertiendo líquido.
+        //// 3. La mezcla aún no ha ocurrido.
+        //if (collision.gameObject.CompareTag("Matraz") && estaVertiendo && !estaMezclando)
+        //{
+        //    // Detiene la Corrutina de vertido para que el flujo se detenga inmediatamente al chocar/mezclarse.
+        //    StopAllCoroutines();
+        //    // Inicia la Corrutina de mezcla, obteniendo el script 'Mezclas' del objeto chocado.
+        //    StartCoroutine(MezclarYCambiarColor_Coroutine(collision.gameObject.GetComponent<Mezclas>()));
+        //}
+        if (collision.gameObject.CompareTag("Liquido"))
         {
-            // Detiene la Corrutina de vertido para que el flujo se detenga inmediatamente al chocar/mezclarse.
-            StopAllCoroutines();
-            // Inicia la Corrutina de mezcla, obteniendo el script 'Mezclas' del objeto chocado.
-            StartCoroutine(MezclarYCambiarColor_Coroutine(collision.gameObject.GetComponent<Mezclas>()));
+            LiquidoPelota pelota = collision.gameObject.GetComponent<LiquidoPelota>();
+            if(pelota != null)
+            {
+                Color nuevoColor = pelota.colorActual;
+                if(liquidoRenderer != null)
+                {
+                    liquidoRenderer.material.color = nuevoColor;
+                }
+            }
         }
     }
     // Corrutina para simular el vertido del líquido
@@ -95,7 +122,14 @@ public class Mezclas : MonoBehaviour
         {
             // Crea una instancia del prefab del líquido en la boca del matraz
             liquidoInstance = Instantiate(prefabLiquido, spawnPointLiquido.position, spawnPointLiquido.rotation);
-
+            // si la pelota(liquido) tiene el script LiquidoPelota, le pasamos el color
+            LiquidoPelota liquidoPelota = liquidoInstance.GetComponent<LiquidoPelota>();
+            if(liquidoPelota != null)
+            {
+                Color colorBase = liquidoRenderer != null ? liquidoRenderer.material.color : colorMezclaInicial;
+                liquidoPelota.colorActual = colorBase;
+                liquidoPelota.SetColor(colorBase);
+            }
             // Obtiene el Rigidbody del líquido recién instanciado
             Rigidbody rbLiquido = liquidoInstance.GetComponent<Rigidbody>();
             if (rbLiquido != null)
